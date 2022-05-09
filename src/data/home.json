@@ -1,0 +1,24 @@
+{
+    "header": {
+      "heading": "Create Demand",
+      "subHeading": "Search the product you need here. Use tags to find any alternative."
+    },
+    "categories": [
+      {
+        "id": "ci-1",
+        "label": "Developer",
+        "value": "Developer"
+      },
+      {
+        "id": "ci-2",
+        "label": "Daily Business",
+        "value": "Daily Business"
+      },
+  
+      {
+        "id": "ci-3",
+        "label": "Data Analytics",
+        "value": "Data Analytics"
+      }
+    ]
+  }
