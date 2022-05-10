@@ -16,7 +16,10 @@ const Section = styled.div`
 `;
 
 const IconSection = styled.div`
-  & .search-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+  & svg {
     height: 20px;
     width: 20px;
   }
@@ -44,4 +47,4 @@ const Input = styled.input`
   font-weight: 600;
 `;
 
-export { Section, IconSection, InputSection, Input, Icon };
+export { Section, IconSection, InputSection, Input };

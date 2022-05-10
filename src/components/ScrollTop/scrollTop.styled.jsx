@@ -12,6 +12,4 @@ const ButtonSection = styled.div`
   justify-content: center;
 `;
 
-const Icon = styled.img``;
-
-export { ButtonSection, Icon };
+export { ButtonSection };

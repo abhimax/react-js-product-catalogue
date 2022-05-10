@@ -1,16 +1,16 @@
+import { ReactComponent as SearchIcon } from "../../assest/icons/search.svg";
 import {
   Section,
   IconSection,
   InputSection,
   Input,
-  Icon,
 } from "./searchInput.styled";
 
 const SearchInput = ({ searchValue, setSearchValue }) => {
   return (
     <Section>
       <IconSection>
-        <Icon className="search-icon" src="icons/search.svg" />
+      <SearchIcon />
       </IconSection>
       <InputSection>
         <Input

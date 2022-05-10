@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 import { Options } from "../Options/index";
 import { Tag, Button } from "../../components/index";
-
+import { ReactComponent as CloseIcon } from "../../assest/icons/close.svg";
 import {
   HeaderSection,
   Section,
@@ -17,7 +17,6 @@ import {
   DetailsText,
   OptionsSection,
   CloseButtonSection,
-  CloseButtonIcon,
 } from "./productDetails.styled";
 
 import { setProduct } from "../../store/reducer/productDetails.reducer";
@@ -54,7 +53,7 @@ const ProductDetails = ({ props }) => {
           className="close-button"
           onClick={closeButtonHandel}
         >
-          <CloseButtonIcon src="icons/close.svg" />
+           <CloseIcon />
         </CloseButtonSection>
       </HeaderSection>
 
