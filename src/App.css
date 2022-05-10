@@ -6,6 +6,26 @@
   height: 40vmin;
   pointer-events: none;
 }
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+input,
+.MuiFormControlLabel-root,
+.MuiTypography-root,
+.MuiButtonBase-root {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

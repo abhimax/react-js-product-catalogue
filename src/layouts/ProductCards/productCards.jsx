@@ -8,7 +8,7 @@ import { Section } from "./productCards.styled";
 import { setProduct } from "../../store/reducer/productDetails.reducer";
 
 const ProductCards = ({ cardsData }) => {
-  const [activeCard, setActiveCard] = (useState < number) | (null > null);
+  const [activeCard, setActiveCard] = useState(null);
 
   const dispatch = useDispatch();
 

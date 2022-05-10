@@ -43,10 +43,9 @@ function TabPanel(props) {
 }
 
 const HomePage = () => {
-  const [searchValue, setSearchValue] = useState < string > "";
+  const [searchValue, setSearchValue] = useState("");
 
-  const [productsData, setProductsData] =
-    useState < Array < IProduct >> product_data;
+  const [productsData, setProductsData] = useState(product_data);
 
   // store selector
   const categories = useSelector((state) => state.category.category);
