@@ -6,7 +6,7 @@ const Section = styled.div`
   padding: 0rem 0.5rem;
   border-radius: 8px;
   margin: 0.5rem 0.5rem 0 0;
-  max-width: 100px;
+  max-width: max-content;
 
   background-color: ${(props) => props.theme.background?.lightBlue};
 `;
