@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
 const Section = styled.div`
-  height: 40px;
-  padding: 0 1rem;
-  border-radius: 5px;
-
+  height: 32px;
+  padding: 0 0.5rem;
+  border-radius: 2px;
   background-color: ${(props) => props.theme.button?.primary};
-
   display: flex;
   align-items: center;
   justify-content: center;
   outline: none;
   border: none;
   cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 `;
 
 const Label = styled.label`
@@ -20,9 +19,9 @@ const Label = styled.label`
 `;
 
 const LabelText = styled.h1`
-  font-size: 0.9rem;
-  font-weight: 600;
-
+  font-size: ${(props) => props.theme.fontSize?.small};
+  font-family: ${(props) => props.theme.fontsFamily?.primary};
+  font-weight: ${(props) => props.theme.fontsWeight?.thick};
   color: ${(props) => props.theme.color?.white};
 `;
 

@@ -21,6 +21,19 @@ const theme = {
     border: {
       primary: "#12B8FF",
     },
+    fontsFamily: {
+      primary: "Roboto, sans-serif",
+    },
+    fontsWeight: {
+      normal: 400,
+      thick: 500,
+    },
+    fontSize: {
+    xSmall: "0.75rem",  
+    small: "0.9rem",
+    medium: "1rem",
+    large: "2rem"
+  }
   };
   
   export { theme };
