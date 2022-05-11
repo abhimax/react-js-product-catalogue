@@ -16,16 +16,15 @@ const Section = styled.div`
 `;
 
 const IconSection = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   & svg {
     height: 20px;
     width: 20px;
   }
 `;
-
-const Icon = styled.img``;
 
 const InputSection = styled.div`
   margin-left: 10px;

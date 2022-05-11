@@ -1,4 +1,5 @@
 import { ReactComponent as SearchIcon } from "../../assest/icons/search.svg";
+
 import {
   Section,
   IconSection,
@@ -10,7 +11,7 @@ const SearchInput = ({ searchValue, setSearchValue }) => {
   return (
     <Section>
       <IconSection>
-      <SearchIcon />
+        <SearchIcon />
       </IconSection>
       <InputSection>
         <Input

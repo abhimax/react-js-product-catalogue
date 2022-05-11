@@ -6,7 +6,12 @@ import Checkbox from "@mui/material/Checkbox";
 import { setCategory } from "../../store/reducer/category.reducer";
 import { setProduct } from "../../store/reducer/productDetails.reducer";
 
-import { Section, CheckBoxSection } from "./category.styled";
+import {
+  Section,
+  CheckBoxSection,
+  LabelSection,
+  Label,
+} from "./category.styled";
 
 const Category = ({ label, value, defaultChecked, checked }) => {
   const dispatch = useDispatch();
@@ -27,15 +32,17 @@ const Category = ({ label, value, defaultChecked, checked }) => {
 
   return (
     <Section>
-      <CheckBoxSection>
+      <CheckBoxSection onClick={clickHandel}>
         <FormControlLabel
           control={
             <Checkbox defaultChecked={defaultChecked} checked={checked} />
           }
-          onClick={clickHandel}
-          label={label}
           value={value}
+          label={null}
         />
+        <LabelSection>
+          <Label>{label}</Label>
+        </LabelSection>
       </CheckBoxSection>
     </Section>
   );
