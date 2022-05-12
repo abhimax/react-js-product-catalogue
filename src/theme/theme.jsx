@@ -1,39 +1,35 @@
 const theme = {
-    background: {
-      primary: "#E5E5E5",
-      secondary: "#FFFFFF",
-      blue: "#12B8FF",
-      lightBlue: "#DBF4FF",
-    },
-    color: {
-      primary: "#3C4858",
-      secondary: "#8492A6",
-      blue: "#12B8FF",
-      white: "#ffffff",
-      darkGray: "#3C4858",
-    },
-    input: {
-      primary: "#F0F2F4",
-    },
-    button: {
-      primary: "#12B8FF",
-    },
-    border: {
-      primary: "#12B8FF",
-    },
-    fontsFamily: {
-      primary: "Roboto, sans-serif",
-    },
-    fontsWeight: {
-      normal: 400,
-      thick: 500,
-    },
-    fontSize: {
-    xSmall: "0.75rem",  
-    small: "0.9rem",
-    medium: "1rem",
-    large: "2rem"
-  }
-  };
-  
-  export { theme };
+  color: {
+    primary: "#12B8FF",
+    primaryLight: "#DBF4FF",
+    background: "#F5F5F5",
+    white: "#ffffff",
+    smoke: "#F5F6F7",
+    light: "#F0F2F4",
+    textGreyDark : "#3C4858",
+    textGrey : "#8492A6",
+  },
+  borderRadius: {
+    card: "4px",
+    input: "2px",
+  },
+  border: {
+    primary: "1px solid rgba(0, 0, 0, 0.05)",
+    selected: "1px solid #12B8FF",
+  },
+  fontsFamily: {
+    primary: "Roboto, sans-serif",
+  },
+  fontsWeight: {
+    normal: 400,
+    thick: 600,
+  },
+  fontSize: {
+  xSmall: "0.75rem",  
+  small: "0.875rem",
+  medium: "1rem",
+  large: "2rem"
+}
+};
+
+export { theme };

@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 const Section = styled.div`
   margin: 0.3rem 0;
-  border-radius: 8px;
+  border-radius: ${(props) => props.theme.borderRadius?.card};
   padding: 0.5rem 1rem 1rem 1rem;
-
-  background-color: ${(props) => props.theme.background?.secondary};
-
+  background-color: ${(props) => props.theme.color?.white};
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  @media screen and (min-width: 0px) and (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const LeftSection = styled.div`
@@ -21,15 +22,17 @@ const LeftSection = styled.div`
 const RightSection = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (min-width: 0px) and (max-width: 800px) {
+    justify-content: flex-end;
+  }
 `;
 
 const NameSection = styled.div``;
 
 const NameText = styled.h1`
-  font-size: 1rem;
-  font-weight: 600;
-
-  color: ${(props) => props.theme.color?.primary};
+font-size: ${(props) => props.theme.fontSize?.small};
+font-weight:  ${(props) => props.theme.fontsWeight?.thick};
+color: ${(props) => props.theme.color?.textGreyDark};
 `;
 
 const TagsSection = styled.div`
@@ -44,9 +47,8 @@ const CategorySection = styled.div`
 
 const CategoryText = styled.h1`
   font-size: 0.9rem;
-  font-weight: 600;
-
-  color: ${(props) => props.theme.color?.primary};
+  font-weight: ${(props) => props.theme.fontsWeight?.normal};
+  color: ${(props) => props.theme.color?.textGrey};
 `;
 
 export {

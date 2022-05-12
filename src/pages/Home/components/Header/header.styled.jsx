@@ -9,17 +9,15 @@ const HeadingSection = styled.div``;
 const SubHeadingSection = styled.div``;
 
 const HeadingText = styled.h1`
-  font-size: 1.7rem;
-  font-weight: bold;
-
-  color: ${(props) => props.theme.color?.primary};
+  font-size: ${(props) => props.theme.fontSize?.medium};
+  font-weight:  ${(props) => props.theme.fontsWeight?.thick};
+  color: ${(props) => props.theme.color?.textGreyDark};
 `;
 
 const SubHeadingText = styled.h3`
-  font-size: 1rem;
-  font-weight: 600;
-
-  color: ${(props) => props.theme.color?.secondary};
+font-size: ${(props) => props.theme.fontSize?.small};
+font-weight:  ${(props) => props.theme.fontsWeight?.normal};
+color: ${(props) => props.theme.color?.textGrey};
 `;
 
 export {

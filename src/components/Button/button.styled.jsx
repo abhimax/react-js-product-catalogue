@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 const Section = styled.div`
-  height: 32px;
-  padding: 0 0.5rem;
-  border-radius: 2px;
-  background-color: ${(props) => props.theme.button?.primary};
+  border-radius: ${(props) => props.theme.borderRadius?.card};
+  background-color: ${(props) => props.theme.color?.primary};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,6 +21,7 @@ const LabelText = styled.h1`
   font-family: ${(props) => props.theme.fontsFamily?.primary};
   font-weight: ${(props) => props.theme.fontsWeight?.thick};
   color: ${(props) => props.theme.color?.white};
+  margin: 0.45rem 0.55rem;
 `;
 
 export { Section, Label, LabelText };

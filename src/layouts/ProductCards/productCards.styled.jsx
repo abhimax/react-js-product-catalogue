@@ -5,7 +5,7 @@ const Section = styled.div`
   flex-direction: column;
 
   & .active-product-card {
-    border: 2px solid ${(props) => props.theme.background?.blue} !important;
+    border: ${(props) => props.theme.border?.selected};
   }
 `;
 

@@ -6,6 +6,16 @@ const Section = styled.div`
 
   & .MuiFormControlLabel-root {
     margin-right: 0px !important;
+    color: red !important;
+    .MuiCheckbox-root{
+      color: ${(props) => props.theme.color?.textGrey};
+    }
+    .MuiFormControlLabel-root{
+      color: ${(props) => props.theme.color?.smoke};
+     }
+     .Mui-checked{
+       color: ${(props) => props.theme.color?.primary};
+     }
   }
 `;
 
@@ -15,16 +25,15 @@ const CheckBoxSection = styled.div`
   align-items: center;
 `;
 
+
 const LabelSection = styled.div`
   margin-right: 10px;
 `;
 
 const Label = styled.label`
-  font-size: 0.9rem;
-  font-weight: 600;
-
-  color: ${(props) => props.theme.color?.secondary};
-
+  font-size: ${(props) => props.theme.fontSize?.small};
+  font-weight: ${(props) => props.theme.fontsWeight?.normal};
+  color: ${(props) => props.theme.color?.textGrey};
   cursor: pointer;
 `;
 

@@ -3,25 +3,23 @@ import styled from "styled-components";
 const Section = styled.div`
   width: 100%;
   padding-bottom: 2rem;
-  border-radius: 5px;
-
-  background-color: ${(props) => props.theme.background?.secondary};
-
+  border-radius: ${(props) => props.theme.borderRadius?.card};
+  background-color: ${(props) => props.theme.color?.white};
   display: flex;
   flex-direction: column;
 `;
 
 const HeadingSection = styled.div`
-  border: 3px solid transparent;
-  border-bottom-color: #f8f8f8;
-  padding: 0 1.2rem 0.5rem 1.2rem;
+  border: 1px solid transparent;
+  border-bottom-color: ${(props) => props.theme.color?.smoke};
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+
 `;
 
 const HeadingText = styled.h1`
-  font-size: 1.2rem;
-
-  font-weight: bold;
-  color: ${(props) => props.theme.color?.darkGray};
+  font-size: ${(props) => props.theme.fontSize?.medium};
+  font-weight:  ${(props) => props.theme.fontsWeight?.thick};
+  color: ${(props) => props.theme.color?.textGreyDark};
 `;
 
 const CategoriesSection = styled.div`

@@ -4,7 +4,7 @@ const Container = styled.div`
   min-height: 100vh;
   width: 100vw;
 
-  background-color: ${(props) => props.theme.background?.primary};
+  background-color: ${(props) => props.theme.color?.background};
 
   display: flex;
   justify-content: center;
@@ -54,10 +54,8 @@ const LeftSection = styled.div`
 const RightSection = styled.div`
   display: flex;
   flex-direction: column;
-
   min-width: 25%;
   max-width: 25%;
-
   flex: 0;
 
   @media screen and (min-width: 0px) and (max-width: 800px) {
@@ -67,7 +65,13 @@ const RightSection = styled.div`
 `;
 
 const TabsSection = styled.div`
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
+  & .MuiTab-root.Mui-selected {
+    color: ${(props) => props.theme.color?.primary};
+  }
+  & .MuiTabs-indicator{
+    background-color : ${(props) => props.theme.color?.primary};
+  }
 `;
 
 const FilterCardSection = styled.div`

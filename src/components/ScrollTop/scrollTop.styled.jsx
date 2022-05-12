@@ -10,6 +10,9 @@ const ButtonSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  right: calc(50vw - 25px);
+  bottom: 15px;
 `;
 
 export { ButtonSection };
