@@ -66,12 +66,14 @@ const CloseButtonSection = styled.div`
   height: 40px;
   width: 40px;
   border-radius: 999px;
-
   background-color: ${(props) => props.theme.color?.background};
-
   display: flex;
   align-items: center;
   justify-content: center;
+    &:hover,
+    &:focus {
+      filter: brightness(95%);
+    }
 `;
 
 const CloseButtonIcon = styled.img``;

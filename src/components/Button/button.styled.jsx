@@ -10,6 +10,11 @@ const Section = styled.div`
   border: none;
   cursor: pointer;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 0;
+  &:hover, &:focus{
+    border-radius: ${(props) => props.theme.borderRadius?.card};
+    background-color: ${(props) => props.theme.color?.primaryDark};
+  }
 `;
 
 const Label = styled.label`
@@ -21,7 +26,7 @@ const LabelText = styled.h1`
   font-family: ${(props) => props.theme.fontsFamily?.primary};
   font-weight: ${(props) => props.theme.fontsWeight?.thick};
   color: ${(props) => props.theme.color?.white};
-  margin: 0.45rem 0.55rem;
+  margin: 0.5rem 0.7rem;
 `;
 
 export { Section, Label, LabelText };
