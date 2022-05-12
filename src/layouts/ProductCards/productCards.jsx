@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-
 import { ProductCard } from "../ProductCard/index";
-
 import { Section } from "./productCards.styled";
-
 import { setProduct } from "../../store/reducer/productDetails.reducer";
 
 const ProductCards = ({ cardsData }) => {

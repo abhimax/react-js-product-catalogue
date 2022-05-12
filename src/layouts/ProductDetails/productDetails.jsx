@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-
 import { Options } from "../Options/index";
 import { Tag, Button } from "../../components/index";
 import { ReactComponent as CloseIcon } from "../../assest/icons/close.svg";

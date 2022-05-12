@@ -3,12 +3,9 @@ import styled from "styled-components";
 const Container = styled.div`
   min-height: 100vh;
   width: 100vw;
-
   background-color: ${(props) => props.theme.color?.background};
-
   display: flex;
   justify-content: center;
-
   position: relative;
 `;
 
@@ -29,19 +26,14 @@ const Section = styled.div`
 
 const LeftSection = styled.div`
   max-width: 70%;
-
   display: flex;
   flex-direction: column;
-
   overflow: hidden;
   overflow-y: scroll;
-
   flex: 1;
-
   &::-webkit-scrollbar {
     display: none;
   }
-
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 
@@ -69,8 +61,8 @@ const TabsSection = styled.div`
   & .MuiTab-root.Mui-selected {
     color: ${(props) => props.theme.color?.primary};
   }
-  & .MuiTabs-indicator{
-    background-color : ${(props) => props.theme.color?.primary};
+  & .MuiTabs-indicator {
+    background-color: ${(props) => props.theme.color?.primary};
   }
 `;
 
@@ -94,7 +86,6 @@ const ProductDetailsCardSection = styled.div`
   @media screen and (min-width: 0px) and (max-width: 800px) {
     height: 100%;
     width: 100%;
-
     position: fixed;
     top: 0;
     left: 0;

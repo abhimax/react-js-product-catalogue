@@ -1,9 +1,7 @@
 import MaterialTabs from "@mui/material/Tabs";
 import MaterialTab from "@mui/material/Tab";
 import { useDispatch, useSelector } from "react-redux";
-
 import { Section } from "./tabs.styled";
-
 import { setTab } from "../../store/reducer/tabs.reducer";
 
 const Tabs = ({}) => {

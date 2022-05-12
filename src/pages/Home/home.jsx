@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import { useSelector } from "react-redux";
-
 import product_data from "../../data/products.json";
 
 import {

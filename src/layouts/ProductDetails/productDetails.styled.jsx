@@ -55,10 +55,9 @@ const HeaderSection = styled.div`
 
 const HeadingSection = styled.div``;
 
-
 const HeadingText = styled.h1`
   font-size: ${(props) => props.theme.fontSize?.medium};
-  font-weight:  ${(props) => props.theme.fontsWeight?.thick};
+  font-weight: ${(props) => props.theme.fontsWeight?.thick};
   color: ${(props) => props.theme.color?.textGreyDark};
 `;
 
@@ -70,10 +69,10 @@ const CloseButtonSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-    &:hover,
-    &:focus {
-      filter: brightness(95%);
-    }
+  &:hover,
+  &:focus {
+    filter: brightness(95%);
+  }
 `;
 
 const CloseButtonIcon = styled.img``;
@@ -84,9 +83,9 @@ const NameSection = styled.div`
 `;
 
 const NameText = styled.h1`
-font-size: ${(props) => props.theme.fontSize?.small};
-font-weight:  ${(props) => props.theme.fontsWeight?.thick};
-color: ${(props) => props.theme.color?.textGreyDark};
+  font-size: ${(props) => props.theme.fontSize?.small};
+  font-weight: ${(props) => props.theme.fontsWeight?.thick};
+  color: ${(props) => props.theme.color?.textGreyDark};
 `;
 
 const TagsSection = styled.div`
@@ -109,10 +108,10 @@ const DetailsSection = styled.div`
 `;
 
 const DetailsText = styled.p`
-font-size: ${(props) => props.theme.fontSize?.small};
-font-weight:  ${(props) => props.theme.fontsWeight?.normal};
-color: ${(props) => props.theme.color?.textGreyDark};
-line-height: 1.5rem;
+  font-size: ${(props) => props.theme.fontSize?.small};
+  font-weight: ${(props) => props.theme.fontsWeight?.normal};
+  color: ${(props) => props.theme.color?.textGreyDark};
+  line-height: 1.5rem;
 `;
 
 const OptionsSection = styled.div`
